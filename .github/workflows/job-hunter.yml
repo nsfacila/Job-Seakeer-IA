@@ -31,8 +31,7 @@ jobs:
           cache: pip
 
       - name: Instalar dependencias
-        run: pip install -r requirements.txt -r requirements-dev.txt
-
+        run: pip install -r requirements.txt
       - name: Comprobar reglas
         run: python -m pytest -q
 
